@@ -18,6 +18,9 @@ Example packet to read and write is as follows,
 1:READ
 1:0001000011110001
 
+Sending "1:MON_REQ" will return a string stating ID followed by 16 characers denoting the states of the switches.
+"ID1:0010101000001110"
+
 This was sketched with a wireless interface in mind.
 I use a generic wireless UART link to communicate with multiple devices over a single serial interface.
 
