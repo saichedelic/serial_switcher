@@ -2,7 +2,6 @@
 #include <avr/wdt.h>
 #include <EEPROM.h>
 #include "SoftTimer.h"
-//#include "LowPower.h"
 
 #define NODE_ID 1
 
@@ -218,11 +217,6 @@ String getValue(String data, char separator, int index)
 void loop() 
 {
   timer.update();
-  //Low Power Idler
-  //LowPower.idle(SLEEP_4S, ADC_ON, TIMER2_OFF, TIMER1_OFF, TIMER0_OFF, SPI_OFF, USART0_ON, TWI_OFF);
-  //delay(2000);
-  //wdt_reset();
-  //Serial.println("RESET!");
 }
 
 
